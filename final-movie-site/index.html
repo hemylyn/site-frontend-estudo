@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Hub</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+    <h1>Movie Hub</h1>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Enable dark mode">Dark mode</button>
+    </div>
+    <p>Simple movie list made with HTML, CSS and JavaScript.</p>
+  </header>
+
+  <main class="container">
+    <section class="controls" aria-label="Movie filters">
+      <label for="searchInput">Search movie</label>
+      <input id="searchInput" type="text" placeholder="Type a movie title...">
+
+      <div class="genre-buttons" role="group" aria-label="Filter by genre">
+        <button class="genre-btn active" data-genre="All">All</button>
+        <button class="genre-btn" data-genre="Action">Action</button>
+        <button class="genre-btn" data-genre="Drama">Drama</button>
+        <button class="genre-btn" data-genre="Comedy">Comedy</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Movie List</h2>
+      <div id="movieList" class="movie-grid"></div>
+      <p id="emptyMessage" class="empty-message" hidden>No movies found.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>First semester project example.</p>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
